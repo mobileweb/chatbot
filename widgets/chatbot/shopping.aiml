@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>HOW MUCH _ DELIVERY</pattern>
+        <template>
+            <srai>DELIVERY COST</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>HOW _ TRACK _ DELIVERY</pattern>
+        <template>
+            <srai>TRACK DELIVERY</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW _ TRACK DELIVERY</pattern>
+        <template>
+            <srai>TRACK DELIVERY</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>DELIVERY COST</pattern>
+        <template>
+            If you’re paying for your order using your David Jones American Express Card, David Jones American Express Platinum Card or David Jones Storecard our Standard Delivery is complimentary. Conditions apply. Please click here for details.</template>
+    </category>
+    <category>
+        <pattern>TRACK DELIVERY</pattern>
+        <template>
+            When you purchase online you’ll receive an email with a tracking number. You can use this tracking number to track your order. You can also view the delivery status of your order in your Online Account. Some products are shipped directly from our suppliers and may not have a tracking number.
+        </template>
+    </category>
+</aiml>

@@ -10,7 +10,7 @@
     font-family: verdana;
     font-size: 13px;
 }
-
+/*
 #sidebar_image {
     background-color: #fbb034;
     display: none;
@@ -18,8 +18,16 @@
     z-index: 11099;
 
 }
-
-#chatWindow, #sidebar_image  {
+*/
+#sidebar_image {
+    background-color: #fbb034;
+    right: 0;
+    bottom: 200px;
+    position: fixed;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#chatWindow/*, #sidebar_image*/  {
 
     bottom: 200px;
     position: fixed;

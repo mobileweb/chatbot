@@ -5,15 +5,15 @@
     var chat;
 
     /******** Load jQuery if not present *********/
-    if (window.jQuery === undefined || window.jQuery.fn.jquery !== '1.4.2') {
+    if (window.jQuery === undefined || window.jQuery.fn.jquery !== '1.9.1') {
         var script_tag = document.createElement('script');
         script_tag.setAttribute("type","text/javascript");
-        /*
+
+        //script_tag.setAttribute("src",
+          //  "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js");
         script_tag.setAttribute("src",
-            "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js");
-            */
-        script_tag.setAttribute("src",
-            "wp-content/themes/stanleywp/js/jquery-1.9.1.min.js");
+            "../widgets/chatbot/js/jquery-1.9.1.min.js");
+
         if (script_tag.readyState) {
             script_tag.onreadystatechange = function () { // For old versions of IE
                 if (this.readyState == 'complete' || this.readyState == 'loaded') {
@@ -47,7 +47,7 @@
             var css_link = $("<link>", {
                 rel: "stylesheet",
                 type: "text/css",
-                href: "widgets/chatbot/css/style.css"
+                href: "../widgets/chatbot/css/style.css"
             });
             css_link.appendTo('head');
 
@@ -120,7 +120,7 @@
 
             /******* Load HTML *******/
             //var jsonp_url = "http://chatbot.com.au/widgets/chatbot/data.php";
-            var jsonp_url = "widgets/chatbot/data.php";
+            var jsonp_url = "../widgets/chatbot/data.php";
 
             $.getJSON(jsonp_url, function(data) {
                 $('#chatbot-container').html(data.html);

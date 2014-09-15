@@ -33,7 +33,7 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
-define('CHAT_URL', 'http://chatbot.com.au/chatbot/chatbot/talk.php');
+define('CHAT_URL', 'chatbot/chatbot/talk.php');
 
 /**#@+
  * Authentication Unique Keys and Salts.
